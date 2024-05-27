@@ -3,18 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Furries at Berkeley</title>
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" type="image/png" href="img/AAAA Logo.png">
 </head>
 <body>
     
     <div class="taskbar">
-        <img src="/img/AAAA Logo.png" alt="Logo" class="logo">
-        <a href="/home.html">Home</a>
-        <a href="/events.html">Events</a>
-        <a href="/contact.html">Contact</a>
+        <div class="left-section">
+            <div class="taskbar-links">
+                <img src="img/AAAA Logo.png" alt="Logo" class="logo">
+                <a href="home.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="https://instagram.com" target="_blank"><img src="img/insta.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
+            <a href="https://tiktok.com" target="_blank"><img src="img/tiktok.png" alt="TikTok"></a>
+        </div>
     </div>
 
+
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <form action="submit_contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
     
 </body>
 </html>
