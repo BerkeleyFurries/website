@@ -3,14 +3,33 @@
 
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/fursuit/Tabling.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
 }
 
 .taskbar {
-    background-color: #fbb040;
+    background-color: rgba(0, 0, 0, 0.7); 
     overflow: hidden;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
 }
 
 .taskbar .logo {
@@ -19,15 +38,80 @@ body {
     margin-right: 20px;
 }
 
-.taskbar a {
+.taskbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.taskbar-links a {
     display: block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-.taskbar a:hover {
+.taskbar-links a:hover {
     background-color: #ddd;
     color: black;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media a {
+    display: block;
+    margin-right: 20px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+.content {
+    text-align: center;
+    margin-top: 100px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh; 
+}
+
+.content h1 {
+    font-size: 3em;
+}
+
+.content p {
+    font-size: 1.5em;
+}
+
+.mailing-list-button {
+    display: inline-block;
+    background-color: #fbb040;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.mailing-list-button:hover {
+    background-color: #ddd;
+}
+
+.description {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    color: white;
 }
